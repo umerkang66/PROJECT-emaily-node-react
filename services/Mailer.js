@@ -36,19 +36,9 @@ class Mailer {
     return response;
   } */
 
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
-  ////////////////////////
+  verifiedSenderEmail = 'ugulzar4512@gmail.com';
 
   constructor({ subject, recipients }, content) {
-    verifiedSenderEmail = 'ugulzar4512@gmail.com';
-
     this.to = this.formatRecipients(recipients);
     this.from = this.verifiedSenderEmail;
     this.subject = subject;
