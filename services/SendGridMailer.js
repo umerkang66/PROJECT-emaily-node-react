@@ -25,7 +25,6 @@ class MailerSendGrid {
   }
 
   formatRecipients(recipients) {
-    // Recipients in the array of objects, that has email property and some other properties, pull out the email property
     return recipients.map(recipient => recipient.email);
   }
 
