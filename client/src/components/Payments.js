@@ -1,6 +1,5 @@
 import StripeCheckout from 'react-stripe-checkout';
 import { connect } from 'react-redux';
-
 import { handleToken } from '../actions';
 
 const Payments = ({ handleToken, auth }) => {
@@ -10,7 +9,8 @@ const Payments = ({ handleToken, auth }) => {
   };
 
   // Amount should be in cents
-  // Token call the callback, when token is received
+  // Token call the callback, when token is received, After the add credits button pressed
+  // Handle token will send the request to backend, that will complete the checkout
   return (
     <StripeCheckout
       amount={500}
